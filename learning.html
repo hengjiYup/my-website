@@ -5,6 +5,20 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>学习之路 | 交易修行</title>
   <link rel="stylesheet" href="css/style.css">
+  <style>
+    .knowledge-card { background: var(--card-bg); border: 1px solid var(--border); border-radius: 8px; margin-bottom: 1.5rem; box-shadow: var(--shadow); overflow: hidden; }
+    .knowledge-card .k-header { background: var(--accent-light); padding: 1rem 1.5rem; display: flex; justify-content: space-between; align-items: center; cursor: pointer; }
+    .knowledge-card .k-header h3 { font-size: 1rem; color: var(--accent); margin: 0; }
+    .knowledge-card .k-header .k-num { font-size: 0.8rem; background: var(--accent); color: #fff; padding: 2px 10px; border-radius: 12px; }
+    .knowledge-card .k-body { padding: 1.5rem; }
+    .knowledge-card .k-body p { color: var(--text-light); line-height: 2; margin-bottom: 0.8rem; }
+    .knowledge-card .k-body p:last-child { margin-bottom: 0; }
+    .knowledge-card .k-body strong { color: var(--text); }
+    .knowledge-card .k-body .key-point { background: #f5f8f4; border-left: 3px solid var(--accent); padding: 0.8rem 1rem; margin: 0.8rem 0; border-radius: 0 6px 6px 0; font-size: 0.9rem; color: var(--text); }
+    .phase-title { font-size: 1.3rem; font-weight: 600; color: var(--accent); margin: 2.5rem 0 0.5rem; padding-bottom: 0.5rem; border-bottom: 2px solid var(--accent-light); }
+    .phase-desc { color: var(--text-light); margin-bottom: 1.5rem; font-size: 0.95rem; }
+    .abbr-inline { display: inline-block; background: var(--accent-light); color: var(--accent); padding: 1px 6px; border-radius: 4px; font-size: 0.85rem; font-weight: 600; }
+  </style>
 </head>
 <body>
 
@@ -25,84 +39,370 @@
   <main>
     <section class="hero">
       <h1>学习<span>之路</span></h1>
-      <p>千里之行，始于足下</p>
+      <p>价格行动 &amp; 聪明资金概念 · 40讲知识总结</p>
       <div class="divider"></div>
     </section>
 
-    <section>
-      <h2 class="section-title">我的交易学习时间线</h2>
-      <p class="section-subtitle">记录每一个重要的学习节点</p>
+    <div class="disclaimer" style="background:#fff8e8; border:1px solid #f0dca0; border-radius:8px; padding:1.2rem 1.5rem; margin-bottom:2rem; font-size:0.9rem; color:#8a6d1b;">
+      ⚠ <strong>免责声明：</strong>以下内容整理自免费交易课程，仅供学习参考。交易极其危险，大多数交易者会亏损。不承诺任何收益，风险100%自担。
+    </div>
 
-      <div class="timeline">
-        <div class="timeline-item">
-          <div class="date">阶段一 · 启蒙</div>
-          <h3>初识交易</h3>
-          <p>开始接触金融市场，学习基本的交易概念。了解什么是K线、均线、成交量等基础知识。阅读第一本交易书籍，对市场产生浓厚兴趣。</p>
+    <!-- ===== 第一阶段：基础概念 ===== -->
+    <div class="phase-title">第一阶段 · 市场基础认知（001-010）</div>
+    <p class="phase-desc">「知是行之始」—— 先建立对市场结构和价格行为的基本理解</p>
+
+    <div class="knowledge-card">
+      <div class="k-header">
+        <h3>001 · 市场结构破裂 <span class="abbr-inline">MSB</span></h3>
+        <span class="k-num">基础</span>
+      </div>
+      <div class="k-body">
+        <p><strong>核心思想：</strong>市场通过创造更高的高点（HH）和更高的低点（HL）形成上升趋势，通过更低的低点（LL）和更低的高点（LH）形成下降趋势。当这种结构被打破时，就是市场结构破裂（MSB）。</p>
+        <div class="key-point">
+          <strong>关键要点：</strong>MSB是趋势反转的第一个信号。上升趋势中，当价格跌破前一个更高的低点，即为看跌MSB；下降趋势中，当价格突破前一个更低的高点，即为看涨MSB。
         </div>
+        <p><strong>实战应用：</strong>MSB不是独立的入场信号，而是方向偏差的确认。发现MSB后，结合订单块或失衡区域寻找精确入场点。</p>
+      </div>
+    </div>
 
-        <div class="timeline-item">
-          <div class="date">阶段二 · 基础</div>
-          <h3>技术分析入门</h3>
-          <p>系统学习技术分析：支撑与阻力、趋势线、形态分析、技术指标（MACD、RSI、布林带等）。开始在模拟盘上练习，体验交易的基本流程。</p>
+    <div class="knowledge-card">
+      <div class="k-header">
+        <h3>002 · 订单块 <span class="abbr-inline">OB</span></h3>
+        <span class="k-num">基础</span>
+      </div>
+      <div class="k-body">
+        <p><strong>核心思想：</strong>订单块是机构大资金进场的区域。在价格大幅移动之前，最后一根反向K线所在的区域就是订单块。它代表了供需失衡的起点。</p>
+        <div class="key-point">
+          <strong>关键要点：</strong>看涨订单块 = 大幅上涨前的最后一根阴线区域；看跌订单块 = 大幅下跌前的最后一根阳线区域。价格回到订单块时，往往会获得强烈反应。
         </div>
+        <p><strong>实战应用：</strong>等待价格回测订单块区域入场，止损设在订单块另一侧。有效的订单块通常伴随失衡（IMB），且位于折扣/溢价区域。</p>
+      </div>
+    </div>
 
-        <div class="timeline-item">
-          <div class="date">阶段三 · 深入</div>
-          <h3>交易系统构建</h3>
-          <p>意识到单纯的技术指标不够，开始学习构建完整的交易系统。研究资金管理、仓位控制、止损策略。学习不同的交易风格：日内、波段、趋势跟踪。</p>
+    <div class="knowledge-card">
+      <div class="k-header">
+        <h3>003 · 失衡 <span class="abbr-inline">IMB</span></h3>
+        <span class="k-num">基础</span>
+      </div>
+      <div class="k-body">
+        <p><strong>核心思想：</strong>当买方或卖方力量极度不平衡时，价格会快速单方向移动，中间留下的「空白」区域就是失衡。表现为三根K线中，第一根和第三根的影线之间存在缺口。</p>
+        <div class="key-point">
+          <strong>关键要点：</strong>失衡区域像磁铁一样吸引价格回填。市场倾向于回到失衡区域恢复「公平价值」。但并非所有失衡都会被填补——强趋势中的失衡可能永远不会被回填。
         </div>
+        <p><strong>实战应用：</strong>失衡可作为入场区域（等价格回填时入场），也可作为目标位（预期价格将移动到失衡处）。</p>
+      </div>
+    </div>
 
-        <div class="timeline-item">
-          <div class="date">阶段四 · 心理</div>
-          <h3>交易心理学</h3>
-          <p>认识到交易中最难的不是技术，而是心态。开始阅读《交易心理分析》等经典著作。学习如何管理情绪、克服贪婪和恐惧，用王阳明心学的「知行合一」来指导交易纪律。</p>
+    <div class="knowledge-card">
+      <div class="k-header">
+        <h3>004 · 准莫多位 <span class="abbr-inline">QML</span></h3>
+        <span class="k-num">核心</span>
+      </div>
+      <div class="k-body">
+        <p><strong>核心思想：</strong>准莫多（Quasimodo）是一种结构性反转形态，类似头肩形态。它在市场结构转换时出现，提供高概率的反转入场点。</p>
+        <div class="key-point">
+          <strong>关键要点：</strong>看跌QML：价格形成更高的高点后，跌破前低，然后回测到前一个高点附近（左肩位置）入场做空。看涨QML则反之。QML的关键在于结构破裂后的回测。
         </div>
+        <p><strong>实战应用：</strong>QML是最可靠的反转入场方式之一。入场点在「肩部」位置，止损在「头部」上方/下方，目标至少1:2的风险回报比。</p>
+      </div>
+    </div>
 
-        <div class="timeline-item">
-          <div class="date">阶段五 · 实践</div>
-          <h3>实盘修炼</h3>
-          <p>带着完善的交易系统进入实盘。严格执行交易计划，每笔交易做好复盘记录。在市场的波动中磨练心性，向「此心不动，随机而动」的境界迈进。</p>
+    <div class="knowledge-card">
+      <div class="k-header">
+        <h3>005 · 破裂块 <span class="abbr-inline">BB</span></h3>
+        <span class="k-num">核心</span>
+      </div>
+      <div class="k-body">
+        <p><strong>核心思想：</strong>当一个订单块被强力穿透（失效）后，它就变成了「破裂块」。原来的支撑变成阻力，原来的阻力变成支撑。这代表一方力量彻底击败了另一方。</p>
+        <div class="key-point">
+          <strong>关键要点：</strong>破裂块 = 失败的订单块。当价格强力穿过一个订单块，说明该区域的机构订单已被完全消化。价格回测这个区域时，角色已经翻转。
         </div>
+        <p><strong>实战应用：</strong>失败的看涨订单块 → 看跌破裂块 → 等价格回测做空。破裂块与MSB方向一致时，信号更强。</p>
+      </div>
+    </div>
 
-        <div class="timeline-item">
-          <div class="date">持续进行中...</div>
-          <h3>日日精进</h3>
-          <p>交易学习永无止境。每天复盘、每周总结、每月回顾。不断优化交易系统，不断提升心性修养。在这条路上，我会一直走下去。</p>
+    <div class="knowledge-card">
+      <div class="k-header">
+        <h3>006 · 斐波那契最优入场 <span class="abbr-inline">OTE</span></h3>
+        <span class="k-num">核心</span>
+      </div>
+      <div class="k-body">
+        <p><strong>核心思想：</strong>利用斐波那契回撤工具，在0.618-0.786的区间寻找最优入场点。这个区域被称为「最优交易入场区」，是机构建仓的偏好区间。</p>
+        <div class="key-point">
+          <strong>关键要点：</strong>从摆动低点拉到摆动高点（或反之），0.618-0.786之间就是OTE区域。当OTE区域内有订单块或失衡时，入场信号最强。
+        </div>
+        <p><strong>实战应用：</strong>确定趋势方向 → 等待回撤 → 在OTE区域寻找订单块/失衡作为精确入场点 → 止损设在摆动点之外。</p>
+      </div>
+    </div>
+
+    <div class="knowledge-card">
+      <div class="k-header">
+        <h3>007 · 溢价与折扣</h3>
+        <span class="k-num">基础</span>
+      </div>
+      <div class="k-body">
+        <p><strong>核心思想：</strong>将任意一段价格波动的范围用50%分割——上半部分是溢价区（Premium），下半部分是折扣区（Discount）。聪明资金在折扣区买入，在溢价区卖出。</p>
+        <div class="key-point">
+          <strong>关键要点：</strong>做多只在折扣区入场，做空只在溢价区入场。50%是均衡线，价格在均衡线附近交易价值不明确，应避免入场。
+        </div>
+        <p><strong>实战应用：</strong>此概念是过滤器——即使发现了订单块，如果它在溢价区而你要做多，就应该放弃这个交易。</p>
+      </div>
+    </div>
+
+    <div class="knowledge-card">
+      <div class="k-header">
+        <h3>008 · 反向最优入场 <span class="abbr-inline">ROTE</span></h3>
+        <span class="k-num">核心</span>
+      </div>
+      <div class="k-body">
+        <p><strong>核心思想：</strong>ROTE是OTE的镜像应用。如果OTE用于寻找入场点，ROTE则用于确定止盈目标。利用反向的斐波那契延展，预测价格可能到达的目标位。</p>
+        <div class="key-point">
+          <strong>关键要点：</strong>从入场波段的终点向起点画斐波那契，-0.272和-0.618延展位是常见的止盈目标。ROTE帮助设置合理的获利目标，避免过早或过晚出场。
         </div>
       </div>
-    </section>
+    </div>
 
-    <section style="margin-top:3rem;">
-      <h2 class="section-title">推荐书单</h2>
-      <p class="section-subtitle">这些书帮助我建立了交易认知</p>
-
-      <div class="card">
-        <h3>交易基础</h3>
-        <p>
-          《日本蜡烛图技术》 —— 史蒂夫·尼森<br>
-          《技术分析》 —— 约翰·墨菲<br>
-          《海龟交易法则》 —— 柯蒂斯·费思
-        </p>
+    <div class="knowledge-card">
+      <div class="k-header">
+        <h3>009 · 陷阱与止损狩猎</h3>
+        <span class="k-num">核心</span>
       </div>
-
-      <div class="card">
-        <h3>交易心理</h3>
-        <p>
-          《交易心理分析》 —— 马克·道格拉斯<br>
-          《自律的交易者》 —— 马克·道格拉斯<br>
-          《金融心理学》 —— 拉斯·特维德
-        </p>
+      <div class="k-body">
+        <p><strong>核心思想：</strong>机构资金需要流动性来执行大额订单。散户的止损单集中在明显的高低点附近，机构会故意推动价格触及这些区域（猎杀止损），获取流动性后反向运行。</p>
+        <div class="key-point">
+          <strong>关键要点：</strong>等高点/等低点（Equal Highs/Lows）是流动性池。双顶/双底上方/下方聚集了大量止损单。价格「扫过」这些区域后快速反转，就是止损狩猎的信号。
+        </div>
+        <p><strong>实战应用：</strong>不要把止损放在明显的高低点。识别流动性猎杀后，结合MSB和订单块寻找反向入场机会。</p>
       </div>
+    </div>
 
-      <div class="card">
-        <h3>心学修养</h3>
-        <p>
-          《传习录》 —— 王阳明<br>
-          《王阳明大传》 —— 冈田武彦<br>
-          《知行合一王阳明》 —— 度阴山
-        </p>
+    <div class="knowledge-card">
+      <div class="k-header">
+        <h3>010 · 摆动失败模式 <span class="abbr-inline">SFP</span></h3>
+        <span class="k-num">核心</span>
       </div>
-    </section>
+      <div class="k-body">
+        <p><strong>核心思想：</strong>SFP是假突破的一种表现形式。价格突破了前一个摆动高/低点，但未能收盘在其上方/下方，留下长影线后反转。这表明突破失败，力量衰竭。</p>
+        <div class="key-point">
+          <strong>关键要点：</strong>SFP = 影线突破但实体回收。看跌SFP：影线突破前高但收盘在前高下方；看涨SFP：影线跌破前低但收盘在前低上方。本质上是流动性猎杀的K线表现。
+        </div>
+      </div>
+    </div>
+
+    <!-- ===== 第二阶段 ===== -->
+    <div class="phase-title">第二阶段 · 策略构建（011-022）</div>
+    <p class="phase-desc">「未有知而不行者」—— 将概念组合成可执行的交易系统</p>
+
+    <div class="knowledge-card">
+      <div class="k-header">
+        <h3>011 · 破裂者 (Breaker)</h3>
+        <span class="k-num">核心</span>
+      </div>
+      <div class="k-body">
+        <p><strong>核心思想：</strong>当市场结构被打破，导致之前的支撑/阻力区域角色翻转时形成破裂者。它是结构破裂后价格回测的关键区域，提供顺势入场机会。</p>
+        <div class="key-point">
+          <strong>关键要点：</strong>破裂者与破裂块（BB）类似但更侧重结构层面。上升趋势中最后一个被跌破的支撑区域成为看跌破裂者。价格回测破裂者后继续向破裂方向运行。
+        </div>
+      </div>
+    </div>
+
+    <div class="knowledge-card">
+      <div class="k-header">
+        <h3>012 · 三的力量 <span class="abbr-inline">PO3</span></h3>
+        <span class="k-num">核心</span>
+      </div>
+      <div class="k-body">
+        <p><strong>核心思想：</strong>市场的每一个周期都遵循三个阶段——积累（Accumulation）→ 操纵（Manipulation）→ 分配（Distribution）。这是机构运作的基本模式。</p>
+        <div class="key-point">
+          <strong>关键要点：</strong><strong>积累：</strong>机构在区间内悄悄建仓，价格横盘。<strong>操纵：</strong>假突破以猎杀散户止损并获取更多流动性。<strong>分配：</strong>真正的趋势启动，价格朝机构建仓方向大幅运动。
+        </div>
+        <p><strong>实战应用：</strong>不要在积累阶段交易；识别操纵阶段的假突破；在分配阶段顺势入场。PO3可以应用于任何时间框架——日线、4小时、甚至分钟级别。</p>
+      </div>
+    </div>
+
+    <div class="knowledge-card">
+      <div class="k-header">
+        <h3>013-015 · 支撑阻力翻转 &amp; RBR/DBD/RBD/DBR</h3>
+        <span class="k-num">基础</span>
+      </div>
+      <div class="k-body">
+        <p><strong>核心思想：</strong>价格运动的基本形态可分为延续和反转两大类：</p>
+        <p><strong>S/R Flip：</strong>支撑被打破后变成阻力，阻力被突破后变成支撑。这是最基本的价格行为概念。</p>
+        <p><strong>延续形态：</strong>RBR（涨-盘-涨）和DBD（跌-盘-跌）代表趋势延续，盘整区域是新的订单块。</p>
+        <p><strong>反转形态：</strong>RBD（涨-盘-跌）和DBR（跌-盘-涨）代表趋势反转，盘整区域是转折点。</p>
+        <div class="key-point">
+          <strong>关键要点：</strong>延续形态中的盘整区域是顺势加仓的好位置；反转形态中的盘整区域提示你趋势可能要变了。
+        </div>
+      </div>
+    </div>
+
+    <div class="knowledge-card">
+      <div class="k-header">
+        <h3>016 · 缓解块 <span class="abbr-inline">MiB</span></h3>
+        <span class="k-num">核心</span>
+      </div>
+      <div class="k-body">
+        <p><strong>核心思想：</strong>缓解块是机构「减仓」或「平仓」的区域。当机构有亏损头寸需要处理时，价格会被推回到该区域附近进行「缓解」（平仓解套）。</p>
+        <div class="key-point">
+          <strong>关键要点：</strong>缓解块通常出现在之前的订单块失败后。机构在亏损的订单块附近平仓，导致价格在该区域获得反应。首次回测最有效。
+        </div>
+      </div>
+    </div>
+
+    <div class="knowledge-card">
+      <div class="k-header">
+        <h3>017 · GPX / VWAP游戏盒</h3>
+        <span class="k-num">核心</span>
+      </div>
+      <div class="k-body">
+        <p><strong>核心思想：</strong>GPX利用VWAP（成交量加权平均价格）与价格区间构成的「盒子」来识别交易机会。VWAP代表市场参与者的平均成本，是机构常用的参考基准。</p>
+        <div class="key-point">
+          <strong>关键要点：</strong>价格在VWAP上方 = 买方占优（溢价）；价格在VWAP下方 = 卖方占优（折扣）。结合VWAP与价格结构形成的盒子区间进行交易。
+        </div>
+      </div>
+    </div>
+
+    <div class="knowledge-card">
+      <div class="k-header">
+        <h3>018-020 · 范围偏离、三点触碰、未能返回</h3>
+        <span class="k-num">核心</span>
+      </div>
+      <div class="k-body">
+        <p><strong>范围+偏离：</strong>价格在区间（Range）内运动时，短暂偏离区间边界后迅速回归，是高概率的均值回归交易机会。</p>
+        <p><strong>三点触碰 (TT3)：</strong>价格三次触及同一区域后更容易获得强烈反应。第三次触碰通常是最佳入场时机，因为每次触碰都在消耗该区域的订单。</p>
+        <p><strong>未能返回 (FTR)：</strong>当价格离开某个供需区域后未能再次回到该区域，说明趋势非常强劲，该方向的力量已经完全主导市场。</p>
+        <div class="key-point">
+          <strong>关键要点：</strong>FTR是趋势强度的确认信号。如果价格无法回到之前的订单块，不要逆势交易。
+        </div>
+      </div>
+    </div>
+
+    <div class="knowledge-card">
+      <div class="k-header">
+        <h3>021-022 · 概率思维与交易规则</h3>
+        <span class="k-num">基础</span>
+      </div>
+      <div class="k-body">
+        <p><strong>高概率 vs 低概率：</strong>多信号汇聚 = 高概率（如OTE区域内有订单块+失衡+MSB方向一致）。单一信号 = 低概率。只交易高概率设置。</p>
+        <p><strong>10条交易魔法规则：</strong></p>
+        <div class="key-point">
+          1. 永远先确定大方向偏差<br>
+          2. 只在折扣区做多，溢价区做空<br>
+          3. 等待结构确认，不要预测<br>
+          4. 止损必须在结构之外<br>
+          5. 最低1:2风险回报比<br>
+          6. 不追涨杀跌，只在回测时入场<br>
+          7. 每笔交易风险不超过总资金1-2%<br>
+          8. 连亏后必须休息<br>
+          9. 每笔交易都要做复盘<br>
+          10. 纪律 > 一切
+        </div>
+      </div>
+    </div>
+
+    <!-- ===== 第三阶段 ===== -->
+    <div class="phase-title">第三阶段 · 进阶精通（023-040）</div>
+    <p class="phase-desc">「此心不动，随机而动」—— 在实战中融会贯通</p>
+
+    <div class="knowledge-card">
+      <div class="k-header">
+        <h3>023 · 优越风险管理</h3>
+        <span class="k-num">进阶</span>
+      </div>
+      <div class="k-body">
+        <p><strong>核心思想：</strong>风险管理是交易生存的基石。再好的策略，没有风险管理也会爆仓。</p>
+        <div class="key-point">
+          <strong>关键原则：</strong>每笔交易风险 ≤ 1-2%总资金。仓位大小 = 风险金额 ÷ 止损点数。连续3次亏损后暂停交易，重新复盘。永远不要移动止损到更远的位置。
+        </div>
+      </div>
+    </div>
+
+    <div class="knowledge-card">
+      <div class="k-header">
+        <h3>024-025 · 标准SMC设置 &amp; 狙击手入场</h3>
+        <span class="k-num">进阶</span>
+      </div>
+      <div class="k-body">
+        <p><strong>标准SMC设置流程：</strong>高时间框架确定方向 → 寻找关键区域（订单块/失衡）→ 低时间框架等MSB确认 → 在OTE区域精确入场 → 设置止损和目标。</p>
+        <p><strong>狙击手入场：</strong>在1分钟图上寻找极精确的入场点，将止损缩小到最小，从而获得更高的风险回报比。需要极强的纪律和快速决策能力。</p>
+        <div class="key-point">
+          <strong>纽约开市策略：</strong>纽约开市（北京时间21:30）通常带来当天最大的波动。利用PO3——亚洲盘积累、伦敦盘操纵、纽约盘分配。
+        </div>
+      </div>
+    </div>
+
+    <div class="knowledge-card">
+      <div class="k-header">
+        <h3>026-027 · 预测涨势与趋势反转</h3>
+        <span class="k-num">进阶</span>
+      </div>
+      <div class="k-body">
+        <p><strong>预测涨势：</strong>多时间框架分析——月线/周线确定大趋势，日线确定波段方向，4H/1H确认入场时机。当高时间框架在折扣区+低时间框架出现看涨MSB = 涨势即将开始。</p>
+        <p><strong>预测反转：</strong>流动性猎杀 + 高时间框架供需区域 + MSB + 订单块/失衡汇聚。真正的反转通常伴随「诱导-猎杀-反转」三步曲。</p>
+      </div>
+    </div>
+
+    <div class="knowledge-card">
+      <div class="k-header">
+        <h3>028-033 · 高级概念</h3>
+        <span class="k-num">进阶</span>
+      </div>
+      <div class="k-body">
+        <p><strong>超级破裂块 (SBB)：</strong>多个时间框架上同时形成的破裂块，力量更强，反应更剧烈。</p>
+        <p><strong>反向分形订单块：</strong>利用分形（Fractal）结构在更低时间框架上精确定位订单块的有效区域，提高入场精度。</p>
+        <p><strong>平衡价格范围 (BPR)：</strong>看涨失衡和看跌失衡的重叠区域。当两个方向的失衡在同一位置重叠时，该区域成为极强的支撑/阻力。</p>
+        <p><strong>超级订单块 (SOB)：</strong>高时间框架订单块内嵌套低时间框架订单块，信号叠加，概率更高。</p>
+        <div class="key-point">
+          <strong>最佳时间框架组合：</strong>日内交易：15M + 1M/5M。波段交易：4H/日线 + 1H/15M。长线交易：周线/月线 + 日线/4H。
+        </div>
+      </div>
+    </div>
+
+    <div class="knowledge-card">
+      <div class="k-header">
+        <h3>034-040 · 实战综合策略</h3>
+        <span class="k-num">进阶</span>
+      </div>
+      <div class="k-body">
+        <p><strong>市场结构 vs 流动性 + 失衡：</strong>这三者是SMC交易的三大支柱。结构告诉你方向，流动性告诉你目标，失衡告诉你入场区域。三者结合就是完整的交易系统。</p>
+        <p><strong>会话交易：</strong>不同交易时段有不同特性——亚洲盘通常盘整（积累）、伦敦盘常制造假突破（操纵）、纽约盘启动主趋势（分配）。</p>
+        <p><strong>BPR含诱导策略：</strong>在平衡价格范围内，等待诱导（假突破）发生后入场，是最高概率的设置之一。</p>
+        <div class="key-point">
+          <strong>终极策略总结：</strong>高时间框架偏差 → 关键供需区域 → 等待流动性猎杀 → 低时间框架MSB确认 → OTE区域内订单块入场 → 止损在结构外 → 目标至少1:3。
+        </div>
+      </div>
+    </div>
+
+    <!-- ===== 推荐书单 ===== -->
+    <div class="phase-title">推荐书单</div>
+    <p class="phase-desc">这些书帮助我建立了交易认知</p>
+
+    <div class="card">
+      <h3>交易基础</h3>
+      <p>
+        《日本蜡烛图技术》 —— 史蒂夫·尼森<br>
+        《技术分析》 —— 约翰·墨菲<br>
+        《海龟交易法则》 —— 柯蒂斯·费思
+      </p>
+    </div>
+
+    <div class="card">
+      <h3>交易心理</h3>
+      <p>
+        《交易心理分析》 —— 马克·道格拉斯<br>
+        《自律的交易者》 —— 马克·道格拉斯<br>
+        《金融心理学》 —— 拉斯·特维德
+      </p>
+    </div>
+
+    <div class="card">
+      <h3>心学修养</h3>
+      <p>
+        《传习录》 —— 王阳明<br>
+        《王阳明大传》 —— 冈田武彦<br>
+        《知行合一王阳明》 —— 度阴山
+      </p>
+    </div>
   </main>
 
   <footer>
